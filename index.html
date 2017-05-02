@@ -4,6 +4,16 @@
 branch.init('key_live_mfBwyFfOhPp0xA2oKAeR6oplDxiDdJD5');
 
 });
+
+	var listener = function(event) { alert("Will show journey"); }
+
+	var ClickJourneyCTA = function(event) { alert("did click CTA"); }
+	// Specify an event to listen for
+	branch.addListener('willShowJourney', listener);
+	
+	branch.addListener('didClickJourneyCTA', listener);
+	// Listen for all events
+
 	
 </script>
 </head>
