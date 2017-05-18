@@ -8,32 +8,7 @@ branch.init('key_live_mfBwyFfOhPp0xA2oKAeR6oplDxiDdJD5',{},callback);
             
             function callback(error,data){
                    alert(data);
-            }
-            
-            
-            
-            function sendSMS(form) {
-                var phone = form.phone.value;
-                var linkData = {
-                    tags: [],
-                    channel: 'Website',
-                    feature: 'TextMeTheApp',
-                    data: {
-                        'foo': 'bar'
-                    }
-                };
-                var options = {};
-                var callback = function(err, result) {
-                    if (err) {
-                        alert("Sorry, something went wrong."+err);
-                    }
-                    else {
-                        alert("SMS sent!");
-                    }
-                };
-                branch.sendSMS(phone, linkData, options, callback);
-                form.phone.value = "";
-            }
+            };
             
         </script>
     </head>
