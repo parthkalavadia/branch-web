@@ -12,7 +12,7 @@ function sendSMS(form) {
       channel: 'Website',
       feature: 'Text-Me-The-App',
       data: {
-        foo: 'bar'
+        $custom_sms_text : "Line1\n {{ link }}\nLine3"
       }
     },
     { make_new_link: false }, // Default: false. If set to true, sendSMS will generate a new link even if one already exists.
