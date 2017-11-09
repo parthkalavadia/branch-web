@@ -8,14 +8,18 @@
         <a href="https://123onstage.test-app.link/Contact-Contact-space-travel-qveQ9KL">click here</a>
         <br>
         <br>
-        <a href="http://google.com" id="link_to_click" target="_blank">CLICK ME</a>
+        <div id="foz" data-href="http://www.google.fi">Google</div>
 
       <script>
-        var link = document.getElementById( 'link_to_click' ),
-        event = document.createEvent( 'HTMLEvents' );
+       document.getElementById("foz").addEventListener("click", function(evt) {
+    var a = document.createElement('a');
+    a.setAttribute("href", this.getAttribute("data-href"));
+    a.setAttribute("target", "_blank");
 
-        event.initEvent( 'click', true, true );
-        link.dispatchEvent( event );
+    var dispatch = document.createEvent("HTMLEvents");
+    dispatch.initEvent("click", true, true);
+    a.dispatchEvent(dispatch);
+}, false);
         </script>
     </body>
 </html>
