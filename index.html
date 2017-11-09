@@ -6,7 +6,17 @@
     </head>
     <body>
         <a href="https://123onstage.test-app.link/Contact-Contact-space-travel-qveQ9KL">click here</a>
-      
+        <br>
+        <br>
+        <a href="http://google.com" id="link_to_click" target="_blank">CLICK ME</a>
+
+      <script>
+        var link = document.getElementById( 'link_to_click' ),
+        event = document.createEvent( 'HTMLEvents' );
+
+        event.initEvent( 'click', true, true );
+        link.dispatchEvent( event );
+        </script>
     </body>
 </html>
 
