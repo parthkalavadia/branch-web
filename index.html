@@ -2,25 +2,20 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
+        <script src="jquery-3.2.1.min.js"></script>
 
     </head>
     <body>
-        <a href="https://123onstage.test-app.link/Contact-Contact-space-travel-qveQ9KL">click here</a>
-        <br>
-        <br>
-        <div id="foz" data-href="http://www.google.fi">Google</div>
+<script type="text/javascript">
+$(function(){
+    $('#thickboxButton').click(function(){
+        $('#thickboxId').click();
+    });
+});
+</script>
 
-      <script>
-       document.getElementById("foz").addEventListener("click", function(evt) {
-    var a = document.createElement('a');
-    a.setAttribute("href", this.getAttribute("data-href"));
-    a.setAttribute("target", "_blank");
-
-    var dispatch = document.createEvent("HTMLEvents");
-    dispatch.initEvent("click", true, true);
-    a.dispatchEvent(dispatch);
-}, false);
-        </script>
+<input id="thickboxButton" type="button" value="Click me">
+<a id="thickboxId" href="myScript.php" class="thickbox" title="">Link</a>
     </body>
 </html>
 
