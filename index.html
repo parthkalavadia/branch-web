@@ -8,14 +8,15 @@
     <body>
 <script type="text/javascript">
 $(function(){
-    $('#thickboxButton').click(function(){
-        $('#thickboxId')[0].click();
+    $('#thickboxButton').click(function(){        
+        var a = document.getElementsByClassName('thickboxId')[0];
+        a.click()
     });
 });
 </script>
 
 <input id="thickboxButton" type="button" value="Click me">
-<a id="thickboxId" href="https://www.google.com/" class="thickbox" title="">Link</a>
+<a class="thickboxId" href="https://www.google.com/" class="thickbox" title="">Link</a>
     </body>
 </html>
 
